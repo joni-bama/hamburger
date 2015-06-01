@@ -15,12 +15,29 @@
   <?php wp_head(); ?>
 </head>
 
-
 <body <?php body_class(); ?>>
 
 <header>
   <div class="container clearfix">
-      
+    <nav class="sideNav">
+      <span class="fa fa-bars"></span>
+      <ul class="slideLeft">
+        <li>
+          <a href="<?php echo home_url( '/' ); ?>">Home</a>
+          <a href="<?php echo get_page_link(get_page_by_title(about)); ?>">About</a>
+          <a href="<?php echo get_page_link(get_page_by_title(blog)); ?>">Blog</a>
+        </li>
+        <li><img src=""></li>
+        <li>123 Fake St. Fakeland USA, 90210</li>
+        <li>123-456-7891</li>
+        <li>
+          <a href="http://facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
+          <a href="http://twitter.com" target="blank"><i class="fa fa-twitter"></i></a>
+          <a href="http://instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>&copy; BurgerPlace 2015</li>
+      </ul> 
+    </nav>
 
     <!-- <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
@@ -41,7 +58,7 @@
       </ul>
     </nav><!-- End mainNav -->
 
-    <nav class="sideNav">
+<!--     <nav class="sideNav">
       <span class="fa fa-bars"></span>
       <ul class="dropdown wrapper">
         <li>
@@ -59,7 +76,7 @@
         </li>
         <li>&copy; BurgerPlace 2015</li>
       </ul> 
-    </nav>
+    </nav> -->
   </div> <!-- /.container -->
 </header><!--/.header-->
 

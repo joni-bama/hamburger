@@ -3,7 +3,7 @@ $(function(){
     var b = $('.mainNav').outerHeight();
 	
 	$(".fa-bars").on("click", function(){
-		$(".dropdown").toggleClass("open");
+		$("header .container").toggleClass("slide");
 	});
 
     $(window).scroll(function() {
