@@ -27,7 +27,7 @@
           <a href="<?php echo get_page_link(get_page_by_title(about)); ?>">About</a>
           <a href="<?php echo get_page_link(get_page_by_title(blog)); ?>">Blog</a>
         </li>
-        <li><img src=""></li>
+        <li><img src="<?php bloginfo('template_directory'); ?>/img/burgerLogo.png"></li>
         <li>123 Fake St. Fakeland USA, 90210</li>
         <li>123-456-7891</li>
         <li>
